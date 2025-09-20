@@ -11,10 +11,13 @@ CodeSage is a Retrieval-Augmented Generation (RAG) powered assistant
 designed to help developers **explore, understand, and query any GitHub
 repository** with natural language.
 
-It combines: - **LangChain** for document loading and chunking -
-**FAISS** for vector search - **HuggingFace models (CodeBERT + LLaMA)**
-for embeddings and answering - **Streamlit** for a user-friendly
-interface
+It combines:
+
+-   **LangChain** – Handles repository parsing, splitting files into manageable text chunks for retrieval, and the RAG pipeline.
+-   **FAISS** – Efficiently stores and searches the vector embeddings of code/document chunks to retrieve the most relevant context.
+-   **HuggingFace CodeBERT** – Generates high-quality embeddings for code and documentation, enabling semantic similarity search.
+-   **HuggingFace LLaMA 3.2-3B** – Acts as the reasoning engine to generate natural language answers grounded in the retrieved context.
+-   **Streamlit** – Provides a simple web interface for uploading repositories, asking questions, and viewing structured answers with sources.
 
 ------------------------------------------------------------------------
 
